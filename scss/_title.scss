@@ -1,0 +1,100 @@
+//
+// Title.scss
+//
+.title-heading {
+    line-height: 26px;
+    .sub-title {
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+    .heading {
+        font-weight: 600;
+        font-size: 38px;
+        letter-spacing: 1px;
+        &.heading-two {
+            font-size: 30px;
+        }
+    }
+    .para-desc {
+        font-size: 17px;
+        max-width: 700px;
+    }
+    .designation {
+        font-size: 13px;
+        letter-spacing: 2px;
+        background: #010103;
+        background: linear-gradient(to right, #010103, #191a1c);
+        span {
+            &:after {
+                content: "|";
+                position: absolute;
+                top: 8px;
+                left: 54%;
+                width: 100%;
+                height: 100%;
+            }
+            &:last-of-type:after {
+                content: "";
+            }
+        }
+    }
+}
+.section-title {
+    position: relative;
+    margin-bottom: 60px;
+    .title {
+        letter-spacing: 2px;
+        font-size: 24px;
+        &.ele-title {
+            font-size: 18px;
+            letter-spacing: 1px;            
+            &:after {
+                left: 0;
+                margin: 20px 0 0 0px;
+            }
+        }
+        &.sec-construcion {
+            &:after {
+                background-color: $warning;
+            }
+        }
+        &:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: $custom;
+            position: absolute;
+            left: 0;
+        }
+        &:after {
+            left: 50%;
+            margin: 24px 0 0 -30px;
+        }
+    }
+    .heading_h4 {
+        font-size: 20px;
+    }
+    .para-desc {
+        max-width: 700px;
+    }
+} 
+@media (max-width: 425px) {
+    .title-heading {
+        .designation {
+            span {
+                display: block;
+                &:after { 
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 200px) and (max-width: 767px) {
+    .title-heading {
+        .heading, .heading-two {
+            font-size: 26px !important;
+        }
+    }
+}
