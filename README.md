@@ -2,5 +2,5 @@
 Official website of thereafter.me
 
 ---
-permalink: /home_agency.html
+permalink: /index.html
 ---
